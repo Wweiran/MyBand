@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MyBand</string>
+    
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    
+    <string name="action_settings">设置</string>
+    
+    <array name="tab_main_title">
+        <item>心电</item>
+        <item>脉搏</item>
+        <item>运动</item>
+    </array>
+    
+    <string name="scanning">正在搜索其他蓝牙设备\n   scanning for devices…</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">没有设备已配对\n    No devices have been paired</string>
+    <string name="none_found">未找到其他蓝牙设备</string>
+    <string name="title_paired_devices">已配对的蓝牙设备</string>
+    <string name="title_other_devices">其他蓝牙设备\n（暂未配对）</string>
+    <string name="button_scan">搜索其他蓝牙设备</string>
+    <string name="name">智能手环</string>
+    
+    <string name="tv_sport_fore_speed">速度：</string>
+    <string name="tv_sport_fore_temperature">温度：</string>
+    <string name="tv_sport_fore_uv">紫外线：</string>
+    <string name="tv_sport_fore_steps">步数：</string>
+    <string name="tv_sport_fore_total">总步数：</string>
+    <string name="string_start">开始</string>
+    <string name="notice">注意</string>
+    <string name="dialog_message_run">本次跑步距离不够300米，现在退出将不保存本次记录，是否退出？</string>
+    <string name="dialog_message_save">是否保存本次的跑步记录？</string>
+
+</resources>
+

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart2"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"/>
+            
+            <TextView
+                android:id="@+id/pulse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#96c8c8"
+                android:gravity="center"
+                android:padding="13dp"
+                android:text="脉搏"
+                android:textColor="#eeff8133"
+                android:textSize="24sp"/>
+            
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff3bc">
+                
+                <Button
+                    android:id="@+id/startsend2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#fff5b0"
+                    android:text="脉搏波形"
+                    android:textColor="#ccfc7fb0"
+                    android:translationZ="16dp"
+                    app:layout_constraintRight_toLeftOf="@+id/guideline2"
+                    app:layout_constraintTop_toTopOf="parent"/>
+    
+                <Button
+                    android:id="@+id/history2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp"
+                    android:background="#fff5b0"
+                    android:text="历史"
+                    android:textColor="#ccfc7fb0"
+                    android:translationZ="16dp"
+                    app:layout_constraintRight_toRightOf="@+id/startsend2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="24dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintTop_toTopOf="@+id/startsend2"
+                    android:layout_marginTop="0dp"/>
+    
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:foregroundGravity="center"
+                    app:layout_constraintGuide_begin="180dp"/>
+            
+            
+            </android.support.constraint.ConstraintLayout>
+            
+            
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+        
+        
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart6"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="15dp" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#22223323" />
+            
+            <!--<TextView
+                android:id="@+id/sleeptemperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="睡眠温度："
+                android:textColor="#3f5d96"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#609c71be" />-->
+            
+            <TextView
+                android:id="@+id/waketime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="清醒时间："
+                android:textColor="#aa2837bc"
+                android:textSize="25sp" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#22223323" />
+            
+            <TextView
+                android:id="@+id/shallowsleeptime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="浅睡时间："
+                android:textColor="#aa2837bc"
+                android:textSize="25sp" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#22223323" />
+            
+            <TextView
+                android:id="@+id/deepsleeptime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="深睡时间："
+                android:textColor="#aa2837bc"
+                android:textSize="25sp" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#22223323" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+                
+                <TextView
+                    android:id="@+id/sleepquality"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="睡眠质量"
+                    android:textColor="#aa2837bc"
+                    android:textSize="20sp" />
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#22223323" />
+                
+                <TextView
+                    android:id="@+id/dreamtest"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="美梦测试"
+                    android:textColor="#aa2837bc"
+                    android:textSize="20sp" />
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#22223323" />
+                
+                <TextView
+                    android:id="@+id/totalsleeptime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="睡眠总时间"
+                    android:textColor="#aa2837bc"
+                    android:textSize="20sp" />
+            
+            
+            </LinearLayout>
+        
+        
+        </LinearLayout>
+    
+    
+    </ScrollView>
+
+</LinearLayout>

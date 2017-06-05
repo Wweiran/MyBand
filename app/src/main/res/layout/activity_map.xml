@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/baidu_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:clickable="true">
+    </com.baidu.mapapi.map.MapView>
+    
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/baidu_map_view"
+        android:layout_alignLeft="@id/baidu_map_view"
+        android:layout_alignStart="@id/baidu_map_view"
+        android:layout_marginLeft="10dp"
+        android:text="开始"
+        android:textStyle="bold"/>
+    
+    <Button
+        android:id="@+id/btn_map_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_start"
+        android:layout_toEndOf="@id/btn_start"
+        android:layout_alignBottom="@id/baidu_map_view"
+        android:layout_marginLeft="8dp"
+        android:text="记录"
+       />
+    
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <TextView
+            android:id="@+id/tv_location_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="360dp"
+            android:text="定位类型"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        
+        <TextView
+            android:id="@+id/tv_precision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="定位精度"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/tv_location_type"/>
+        
+        <TextView
+            android:id="@+id/tv_latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            android:text="纬度"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_location_type"
+            app:layout_constraintTop_toBottomOf="@+id/tv_longitude"/>
+        
+        <TextView
+            android:id="@+id/tv_longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            android:text="经度"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_location_type"
+            app:layout_constraintTop_toBottomOf="@+id/tv_location_type"/>
+        
+        <TextView
+            android:id="@+id/tv_altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            android:text="高度"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_precision"
+            app:layout_constraintTop_toBottomOf="@+id/tv_precision"/>
+        
+        <TextView
+            android:id="@+id/tv_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            android:text="速度"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_altitude"
+            app:layout_constraintTop_toBottomOf="@+id/tv_altitude"/>
+        
+        
+        <TextView
+            android:id="@+id/tv_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            android:text="方向信息"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_speed"
+            app:layout_constraintTop_toBottomOf="@+id/tv_speed"/>
+        
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            android:text="距离信息"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_latitude"
+            app:layout_constraintTop_toBottomOf="@+id/tv_latitude"/>
+        
+        
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="192dp"/>
+    
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>

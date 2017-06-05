@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sport"
+            android:icon="@drawable/bg_menu_sport"
+            android:title="运动模式"/>
+        <item
+            android:id="@+id/nav_sleep"
+            android:icon="@drawable/bg_menu_sleep"
+            android:title="睡眠模式"/>
+        <item
+            android:id="@+id/nav_ecg"
+            android:icon="@drawable/bg_menu_ecg"
+            android:title="心电模式"/>
+        <item
+            android:id="@+id/nav_sphy"
+            android:icon="@drawable/bg_menu_sphy"
+            android:title="血氧模式"/>
+    </group>
+
+
+</menu>
